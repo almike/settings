@@ -18,7 +18,7 @@ execute pathogen#infect()
 "sudo npm install -g jshint
 com -nargs=* F call F(<f-args>)
 function F(arg1)
-	exe 'lvim /'.a:arg1.'/gj . app/** config/** db/** lib/**'
+	exe 'lvim /'.a:arg1.'/gj * app/** config/** db/** lib/**'
 	vertical lw
 	winc =
 endfunction
