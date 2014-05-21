@@ -14,9 +14,7 @@ set autoindent
 imap jj <Esc>
 autocmd CursorMoved * exe printf('match DiffChange /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 ":so $VIMRUNTIME/syntax/hitest.vim
-nmap :search :lvim /%/g . app/** config/** db/** lib/**
 execute pathogen#infect()
-"sudo npm install -g jsonlint
 "sudo npm install -g jshint
 com -nargs=* F call F(<f-args>)
 function F(arg1)
@@ -24,3 +22,4 @@ function F(arg1)
 	vertical lw
 	winc =
 endfunction
+nmap :E :e **/
