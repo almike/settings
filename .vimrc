@@ -6,8 +6,8 @@ set nu
 set hlsearch
 set smartcase
 highlight LineNr ctermfg=7 ctermbg=8
-set backupdir=/tmp//
-set directory=/tmp//
+set backupdir=/tmp/
+set directory=/tmp/
 set autoread
 au CursorHold * checktime
 set autoindent
