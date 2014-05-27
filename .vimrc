@@ -17,8 +17,9 @@ autocmd CursorMoved * exe printf('match DiffChange /\V\<%s\>/', escape(expand('<
 execute pathogen#infect()
 "sudo npm install -g jshint
 com -nargs=* F call F(<f-args>)
+set wildignore+=public/**,solr/**,tmp/**
 function F(...)
-	exe 'lvim /'.join(a:000).'/gj * app/** config/** db/** lib/** libraries/** applications/** properties/**'
+	exe 'lvim /'.join(a:000).'/gj **'
 	vertical lw
 	winc =
 endfunction
