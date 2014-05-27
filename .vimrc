@@ -23,3 +23,4 @@ function F(...)
 	winc =
 endfunction
 nmap :E :e **/
+nmap :T :tabedit **/
