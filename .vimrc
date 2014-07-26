@@ -25,3 +25,4 @@ function F(...)
 endfunction
 nmap :E :e **/
 nmap :T :tabedit **/
+nmap :W :wa<Enter>
