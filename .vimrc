@@ -29,3 +29,5 @@ map <F3> :lnext<enter>
 nmap :E :e **/
 nmap :T :tabedit **/
 nmap :W :wa<Enter>
+set binary
+set noeol
