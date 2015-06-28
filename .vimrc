@@ -11,7 +11,7 @@ set backupdir=/tmp/
 set directory=/tmp/
 set autoread
 set autoindent
-set wildignore+=public/**,solr/**,tmp/**,app/assets/images/**,app/assets/javascripts/plugins/**,app/assets/stylesheets/plugins/**
+set wildignore+=public/**,solr/**,tmp/**,app/assets/images/**,app/assets/javascripts/plugins/**,app/assets/stylesheets/plugins/**,node_modules/**,transient/**
 imap jj <Esc>
 au CursorHold * checktime
 au CursorMoved * exe printf('match DiffChange /\V\<%s\>/', escape(expand('<cword>'), '/\'))
@@ -27,6 +27,11 @@ endfunction
 map <F3> :lnext<enter>
 nmap :E :e **/
 nmap :T :tabedit **/
+nmap :S :sp **/
+nmap :V :vsp **/
 nmap :W :wa<Enter>
 set binary
 set noeol
+set list
+au BufNewFile,BufRead *.xea setlocal ft=javascript
+set laststatus=2
