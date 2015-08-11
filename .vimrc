@@ -1,3 +1,4 @@
+syntax enable
 color jellybeans
 set t_Co=256
 set tabstop=4
