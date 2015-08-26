@@ -36,3 +36,6 @@ set noeol
 set list
 au BufNewFile,BufRead *.xea setlocal ft=javascript
 set laststatus=2
+let g:indent_guides_enable_on_vim_startup = 1
+hi IndentGuidesOdd ctermbg=234
+hi IndentGuidesEven ctermbg=235

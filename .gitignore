@@ -1,7 +1,7 @@
 *
 !.gitignore
 !.vim/autoload
-!.vim/bundle
+!.vim/bundle*
 !.vim/colors
 !.jshintrc
 !.vimrc
