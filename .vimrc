@@ -7,7 +7,6 @@ set so=16
 set nu
 set hlsearch
 set smartcase
-highlight LineNr ctermfg=7 ctermbg=8
 set backupdir=/tmp/
 set directory=/tmp/
 set autoread
@@ -39,3 +38,8 @@ set laststatus=2
 let g:indent_guides_enable_on_vim_startup = 1
 hi IndentGuidesOdd ctermbg=234
 hi IndentGuidesEven ctermbg=235
+hi NonText ctermbg=none
+hi Special ctermbg=none
+hi SpecialKey ctermbg=none
+hi LineNr ctermbg=none
+hi Normal ctermbg=none
