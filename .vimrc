@@ -1,8 +1,8 @@
 syntax enable
 color jellybeans
 set t_Co=256
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set so=16
 set nu
 set hlsearch
@@ -43,3 +43,4 @@ hi Special ctermbg=none
 hi SpecialKey ctermbg=none
 hi LineNr ctermbg=none
 hi Normal ctermbg=none
+autocmd BufNewFile,BufRead /home/mickael/rsa/* set expandtab
