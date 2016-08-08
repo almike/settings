@@ -1,9 +1,0 @@
-#!/bin/bash
-cp .vimrc ~/.vimrc
-cp -r .vim ~/.vim
-mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl -LSso ~/.vim/autoload/pathogen.vim
-git clone git@github.com:scrooloose/syntastic.git ~/.vim/bundle
-git clone git@github.com:vim-airline/vim-airline.git ~/.vim/bundle
-git clone git@github.com:mileszs/ack.vim.git ~/.vim/bundle
-git config --global core.editor "vim"

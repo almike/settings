@@ -1,8 +1,0 @@
-*
-!.gitignore
-!.vim/autoload
-!.vim/bundle*
-!.vim/colors
-!.jshintrc
-!.vimrc
-!.tmux.conf
