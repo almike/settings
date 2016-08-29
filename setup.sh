@@ -1,5 +1,5 @@
 #!/bin/bash
-root=`pwd`
+root="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 for file in vimrc vim tmux.conf jshintrc; do
 	rm -fr ~/.$file
 	ln -s $root/.$file ~/.$file
