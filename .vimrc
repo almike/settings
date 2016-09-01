@@ -16,6 +16,7 @@ set binary
 set noeol
 set list
 set lazyredraw
+set backspace=indent,eol,start
 set wildignore+=public/**,tmp/**,node_modules/**,coverage/**
 let g:indent_guides_enable_on_vim_startup = 1
 execute pathogen#infect()
