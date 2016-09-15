@@ -11,6 +11,3 @@ git clone git@github.com:vim-airline/vim-airline.git ~/.vim/bundle/airline
 git clone git@github.com:rking/ag.vim.git ~/.vim/bundle/ag
 git clone git@github.com:derekwyatt/vim-scala.git ~/.vim/bundle/scala
 git config --global core.editor "vim"
-
-sudo apt update
-sudo apt install silversearcher-ag
