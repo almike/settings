@@ -13,4 +13,5 @@ add-apt-repository -y ppa:pi-rho/dev
 apt update
 apt install -y tmux
 
+git config --global push.default simple
 echo "do: git config --global user.email/name"
