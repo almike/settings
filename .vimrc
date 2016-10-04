@@ -25,7 +25,7 @@ let g:ctrlp_max_files=0
 execute pathogen#infect()
 "sudo npm install -g jshint
 map <C-N> :cnext<enter>
-map <C-M> :cprev<enter>
+map <C-J> :cprev<enter>
 nmap :E :e **/
 nmap :T :tabedit **/
 nmap :W :wa<Enter>
