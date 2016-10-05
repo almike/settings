@@ -24,8 +24,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:ctrlp_max_files=0
 execute pathogen#infect()
 "sudo npm install -g jshint
-map <C-N> :cnext<enter>
-map <C-J> :cprev<enter>
+map <C-J> :cnext<enter>
+map <C-K> :cprev<enter>
 nmap :E :e **/
 nmap :T :tabedit **/
 nmap :W :wa<Enter>
