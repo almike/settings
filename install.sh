@@ -28,6 +28,6 @@ apt remove -y mplayer2
 ln -s /usr/bin/tmux-next /usr/bin/tmux
 
 # open postgresql
-sed -i 's/md5/trust/g' /etc/postgresql/9.5/main/pg_hba.conf
+sed -i 's/md5/trust/g' /etc/postgresql/*/main/pg_hba.conf
 /etc/init.d/postgresql restart
 sudo -u postgres createuser mickael -w -s
