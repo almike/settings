@@ -16,7 +16,7 @@ apt update
 apt install -y \
  apt-transport-https ca-certificates \
  python-software-properties software-properties-common \
- git tmux vim terminator silversearcher-ag htop \
+ git tmux-next vim terminator silversearcher-ag htop \
  postgresql postgresql-contrib \
  gnome-shell ubuntu-gnome-desktop \
  smplayer pavucontrol \
@@ -24,6 +24,8 @@ apt install -y \
 
 # fix for x265
 apt remove -y mplayer2
+
+ln -s /usr/bin/tmux-next /usr/bin/tmux
 
 # open postgresql
 sed -i 's/md5/trust/g' /etc/postgresql/9.5/main/pg_hba.conf
