@@ -7,6 +7,7 @@ wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | apt-key add -
 
 # tmux 2.0 instead of 1.8
 add-apt-repository -y ppa:pi-rho/dev
+add-apt-repository -y ppa:webupd8team/java
 
 # docker
 apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
@@ -18,6 +19,7 @@ apt install -y \
  python-software-properties software-properties-common \
  git tmux vim terminator silversearcher-ag htop \
  postgresql postgresql-contrib \
+ oracle-java8-installer oracle-java8-set-default \
  gnome-shell ubuntu-gnome-desktop \
  smplayer pavucontrol \
  docker-engine
