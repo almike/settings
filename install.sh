@@ -1,7 +1,7 @@
 #!/bin/bash
 # install on 14.04, requires sudo
 
-# postgresql 9.5 instead of 9.3
+# postgresql 9.x instead of 9.3
 sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | apt-key add -
 
@@ -17,7 +17,7 @@ apt update
 apt install -y \
  apt-transport-https ca-certificates \
  python-software-properties software-properties-common \
- git tmux vim terminator silversearcher-ag htop \
+ git tmux-next vim terminator silversearcher-ag htop \
  postgresql postgresql-contrib \
  oracle-java8-installer oracle-java8-set-default \
  gnome-shell ubuntu-gnome-desktop \
@@ -27,7 +27,9 @@ apt install -y \
 # fix for x265
 apt remove -y mplayer2
 
+ln -s /usr/bin/tmux-next /usr/bin/tmux
+
 # open postgresql
-sed -i 's/md5/trust/g' /etc/postgresql/9.5/main/pg_hba.conf
+sed -i 's/md5/trust/g' /etc/postgresql/*/main/pg_hba.conf
 /etc/init.d/postgresql restart
 sudo -u postgres createuser mickael -w -s

@@ -10,6 +10,7 @@ git clone git@github.com:scrooloose/syntastic.git ~/.vim/bundle/syntastic
 git clone git@github.com:vim-airline/vim-airline.git ~/.vim/bundle/airline
 git clone git@github.com:rking/ag.vim.git ~/.vim/bundle/ag
 git clone git@github.com:derekwyatt/vim-scala.git ~/.vim/bundle/scala
+git clone git@github.com:ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp
 git config --global core.editor "vim"
 git config --global push.default simple
 

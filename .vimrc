@@ -14,15 +14,18 @@ set autoread
 set autoindent
 set binary
 set noeol
+set nowrap
 set list
 set lazyredraw
 set backspace=indent,eol,start
-set wildignore+=public/**,tmp/**,node_modules/**,coverage/**
+set wildignore+=public/**,tmp/**,node_modules/**,coverage/**,target/**
+set wildignore+=**/public/**,**/tmp/**,**/node_modules/**,**/coverage/**,**/target/**
 let g:indent_guides_enable_on_vim_startup = 1
+let g:ctrlp_max_files=0
 execute pathogen#infect()
 "sudo npm install -g jshint
-map <C-N> :cnext<enter>
-map <C-P> :cprev<enter>
+map <C-J> :cnext<enter>
+map <C-K> :cprev<enter>
 nmap :E :e **/
 nmap :T :tabedit **/
 nmap :W :wa<Enter>
