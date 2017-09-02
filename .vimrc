@@ -26,6 +26,8 @@ execute pathogen#infect()
 "sudo npm install -g jshint
 map <C-J> :cnext<enter>
 map <C-K> :cprev<enter>
+set splitbelow
+nmap :S :sp **/
 nmap :E :e **/
 nmap :T :tabedit **/
 nmap :W :wa<Enter>
