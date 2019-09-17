@@ -14,9 +14,9 @@ git clone git@github.com:ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp
 git config --global core.editor "vim"
 git config --global push.default simple
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
-nvm install 8
+nvm install 12
 npm config set loglevel silent
 
 echo "do: git config --global user.email/name"
